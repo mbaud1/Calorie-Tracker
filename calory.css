@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    background: gray;
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+header {
+    background: #4CAF50;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+}
+
+.goal-section {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.goal-section input {
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    width: 120px;
+    font-size: 1.1rem;
+}
+
+.goal-section button {
+    padding: 10px 20px;
+    background: white;
+    color: #4CAF50;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.summary {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+    background: #f8f9fa;
+}
+
+.card {
+    text-align: center;
+    background: white;
+    padding: 1.5rem 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    min-width: 160px;
+}
+
+.card h3 {
+    color: #666;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.card p {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+.log-meal {
+    padding: 2rem;
+    border-bottom: 1px solid #eee;
+}
+
+.form-group {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.form-group input {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    flex: 1;
+    min-width: 180px;
+}
+
+.form-group button {
+    padding: 12px 24px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.history {
+    padding: 2rem;
+}
+
+.history h2 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+#food-list {
+    list-style: none;
+}
+
+#food-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    background: #f8f9fa;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    border-left: 4px solid #4CAF50;
+}
+
+#food-list li button {
+    background: #ff4757;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.clear-btn {
+    margin: 2rem auto;
+    display: block;
+    padding: 12px 30px;
+    background: #ff4757;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+.clear-btn:hover {
+    background: #ff3742;
+}

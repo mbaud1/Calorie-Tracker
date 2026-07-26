@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calorie Tracker</title>
+    <link rel="stylesheet" href="calory.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🍎 Calorie Tracker</h1>
+            <div class="goal-section">
+                <label for="daily-goal">Daily Calorie Goal:</label>
+                <input type="number" id="daily-goal" value="2000" min="500" max="5000">
+                <button onclick="saveGoal()">Save Goal</button>
+            </div>
+        </header>
+
+        <div class="summary">
+            <div class="card">
+                <h3>Today's Intake</h3>
+                <p id="total-calories">0</p>
+                <small>calories</small>
+            </div>
+            <div class="card">
+                <h3>Remaining</h3>
+                <p id="remaining-calories">2000</p>
+                <small>calories</small>
+            </div>
+        </div>
+
+        <section class="log-meal">
+            <h2>Log a Meal</h2>
+            <div class="form-group">
+                <input type="text" id="food-name" placeholder="Food name (e.g. Apple)">
+                <input type="number" id="food-calories" placeholder="Calories" min="0">
+                <button onclick="addFood()">Add Food</button>
+            </div>
+        </section>
+
+        <section class="history">
+            <h2>Today's Log</h2>
+            <ul id="food-list"></ul>
+        </section>
+
+        <section class="history">
+            <h2>Previous Days</h2>
+            <div id="history-list"></div>
+        </section>
+
+        <button onclick="clearToday()" class="clear-btn">Clear Today's Log</button>
+    </div>
+    <script src="calorie.js"></script>
+</body>
+</html>
