@@ -1,0 +1,11 @@
+{
+  "background_color": "#ffffff",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "calories.m-baud",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "calories.m-baud",
+  "start_url": "/",
+  "theme_color": "#ffffff"
+}
